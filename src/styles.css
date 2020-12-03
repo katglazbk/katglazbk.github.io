@@ -1,5 +1,5 @@
 body {
-    background-color: #041c25;
+    background-color: #091c2b;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3em;
@@ -46,12 +46,36 @@ h2 {
     background-color: #12496e;
 }
 
+a:link {
+    color: rgb(0, 225, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(0, 110, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(130, 220, 231);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(0, 153, 255);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #095079;
+    background: #032c44;
     border-radius: 10px;
 }
 
