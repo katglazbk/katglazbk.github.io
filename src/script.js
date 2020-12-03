@@ -34,18 +34,19 @@ function calculateScore() {
 
     var scoreDiv = document.getElementById("score"); //Gets the score div which is where the score is displayed
     var meaningDiv = document.getElementById("meaning"); //Gets the score div which is where the score is displayed
-    scoreDiv.innerHTML = "Your Score: " + score.toString()
-    meaningDiv.innerHTML = meaning
-    document.getElementById("refresh").style.display="inline";
+    scoreDiv.innerHTML = "Your Score: " + score.toString() //Sets the div text to your score
+    meaningDiv.innerHTML = meaning //Sets the div text to your meaning
+    document.getElementById("refresh").style.display="inline"; //Reveals the refresh page button
     document.body.scrollTop = 0; // Scrolls to top of the page for Safari
     document.documentElement.scrollTop = 0; // Scrolls to the top of the page for Chrome, Firefox, IE, and Opera
 }
 
+//Clears the page (clear page button)
 function clearPage() {
-    clearBoxes()
-    var scoreDiv = document.getElementById("score"); 
-    var meaningDiv = document.getElementById("meaning");
-    scoreDiv.innerHTML = ""
-    meaningDiv.innerHTML = ""
-    document.getElementById("refresh").style.display="none";
+    clearBoxes() //Calls the clearBoxes function to clear all the boxes
+    var scoreDiv = document.getElementById("score"); //Gets the score div which is where the score is displayed
+    var meaningDiv = document.getElementById("meaning"); //Gets the score div which is where the score is displayed
+    scoreDiv.innerHTML = "" //Makes the score div blank
+    meaningDiv.innerHTML = "" //Makes the meaning div blank
+    document.getElementById("refresh").style.display="none"; //Hides the clear page button button
 }
