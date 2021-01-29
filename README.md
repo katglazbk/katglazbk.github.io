@@ -6,7 +6,7 @@
 
 # Intro
 
-The Rice Purity Test is a test that assesses your degree of innocence based on a checklist of actions provided for you to complete. The more of said actions you've done, the lower your purity score is.
+The Rice Purity Test is a test that assesses your "degree of innocence" based on a checklist of actions provided for you to complete. The more of said actions you've done, the lower your purity score is.
 
 This project is an open-source example of the Rice Purity Test that is heavily commented, so that the average person understands just how the test works. The [source code of the original rice purity test](https://github.com/ricepurity/ricepurity.github.com) is very complex, for whatever reason, and I feel like the source code can be simplified down a lot, to the point where it's essentially user-friendly, hence this project.
 
