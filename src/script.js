@@ -34,10 +34,9 @@ function calculateScore() {
         case (score >= 9):
             meaning = "A score in this range is definitely below average. You may have been to jail, used hard drugs, or had public sex.";
             break;
-        default:
+        case (score < 9):
             meaning = "This score means you&#39ve done some pretty wild stuff, including maybe even paying for or being paid for a sexual act.";
-            break;
-    }
+    };
 
     var scoreDiv = document.getElementById("score"); //Gets the score div which is where the score is displayed
     var meaningDiv = document.getElementById("meaning"); //Gets the score div which is where the score is displayed
