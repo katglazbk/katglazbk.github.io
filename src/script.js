@@ -18,18 +18,25 @@ function calculateScore() {
 
     //Associates your score with what it says about you
     var meaning;
-    if (score >= 98) {
-        meaning = "You&#39re as pure as gold. It would be difficult for anyone over the age of 18 to get this score."
-    } else if (score >= 94) {
-        meaning = "You&#39re still considered pretty pure. Maybe you&#39ve had your first kiss or held hands with someone, but you haven&#39t gone much further than that."
-    } else if (score >= 77) {
-        meaning = "This is about the average score range, which signifies that you are not an averagely pure person. Maybe you&#39ve french kissed before or even gone down below the belt!"
-    } else if (score >= 45) {
-        meaning = "This score means you might have your fair share of alcohol, drugs, or sexual experiences."
-    } else if (score >= 9) {
-        meaning = "A score in this range is definitely below average. You may have been to jail, used hard drugs, or had public sex."
-    } else {
-        meaning = "This score means you&#39ve done some pretty wild stuff, including maybe even paying for or being paid for a sexual act."
+    switch (score) {
+        case (score >= 98):
+            meaning = "You&#39re as pure as gold. It would be difficult for anyone over the age of 18 to get this score.";
+            break;
+        case (score >= 94):
+            meaning = "You&#39re still considered pretty pure. Maybe you&#39ve had your first kiss or held hands with someone, but you haven&#39t gone much further than that.";
+            break;
+        case (score >= 77):
+            meaning = "This is about the average score range, which signifies that you are not an averagely pure person. Maybe you&#39ve french kissed before or even gone down below the belt!";
+            break;
+        case (score >= 45):
+            meaning = "This score means you might have your fair share of alcohol, drugs, or sexual experiences.";
+            break;
+        case (score >= 9):
+            meaning = "A score in this range is definitely below average. You may have been to jail, used hard drugs, or had public sex.";
+            break;
+        default:
+            meaning = "This score means you&#39ve done some pretty wild stuff, including maybe even paying for or being paid for a sexual act.";
+            break;
     }
 
     var scoreDiv = document.getElementById("score"); //Gets the score div which is where the score is displayed
