@@ -19,17 +19,17 @@ function calculateScore() {
     //Associates your score with what it says about you
     var meaning;
     if (score >= 98) {
-        meaning = "You&#39re as pure as gold. It would be difficult for anyone over the age of 18 to get this score."
+        meaning = "You&#39re a freshman in the honors program. Freshly 18, it is actually quite impressive to get such a high score. Stay pure."
     } else if (score >= 94) {
-        meaning = "You&#39re still considered pretty pure. Maybe you&#39ve had your first kiss or held hands with someone, but you haven&#39t gone much further than that."
+        meaning = "You&#39re still figuring out college life. Maybe you&#39ve had a mango white claw or bummed a breeze, but you haven&#39t gone much further than that."
     } else if (score >= 77) {
-        meaning = "This is about the average score range, which signifies that you are not an averagely pure person. Maybe you&#39ve french kissed before or even gone down below the belt!"
+        meaning = "This is about the average score range, which means you might actually go to Depaul. Go back to McGees or wherever you spawn."
     } else if (score >= 45) {
-        meaning = "This score means you might have your fair share of alcohol, drugs, or sexual experiences."
+        meaning = "This score means you might actually be fun to hang around. You have definitely played darts at the O or sang karaoke at Trader Todds or McGees."
     } else if (score >= 9) {
-        meaning = "A score in this range is definitely below average. You may have been to jail, used hard drugs, or had public sex."
+        meaning = "You are definitely a &#39Bler. You&#39re the life of the loyolaparties even when they flop. Just try to not waste your tuition money on dispos and Pbr."
     } else {
-        meaning = "This score means you&#39ve done some pretty wild stuff, including maybe even paying for or being paid for a sexual act."
+        meaning = "This score means you&#39ve done some wild stuff, how did a Columbia kid find this page?"
     }
 
     var scoreDiv = document.getElementById("score"); //Gets the score div which is where the score is displayed
